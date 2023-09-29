@@ -16,6 +16,8 @@ Grâce à l'extention live server de VS Code sur le html.
 
  ! Bug de dernière minutes (sinon c'est trop facile) : je n'ai plus accès à l'API, j'ai dû être bloquée au niveau des requêtes ! ...Et donc plus rien ne fonctionne...
 
+ *C'est bon ça remarche*
+
  On peut ajouter un drone grâce au bouton + de l'encadré gauche.
  Un formulaire pour paramétrer les adresses de départ et d'arrivée apparaît.
  Le nom du drone est modifiable MAIS il faut l'éditer avant de lancer un drone sinon un bug apparaît (je n'ai pas pu le régler cette après-midi à cause du bug d'API).
@@ -34,6 +36,8 @@ Grâce à l'extention live server de VS Code sur le html.
  V2 : je voulais implémenter un tableau de gestion des drones où l'on pouvait choisir l'adresse. C'est chose faite, ça a marché toute la semaine et là je n'arrive plus à accéder à l'API. En espérant que sur un autre pc ça marche :D
  
  Pour cela j'ai tout fait dans le fichier gestionScript.js. J'ai mis chaque nouvelle fonctionnalité que j'implémentais les unes à la suite des autres. Ce n'est pas très bien organisé mais j'ai essayé de commenter un minimum.
+
+ J'ai pu commencer un refacto mais je n'ai pas pu le finir entièrement (présence de bug).
 
 
 

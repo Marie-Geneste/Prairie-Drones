@@ -183,7 +183,7 @@ function displayDroneOnMap(droneId, startLatLng, endLatLng) {
 
     const intervalId = setInterval(() => {
         updateCoordinatesDisplay(dronesOnMap[droneId].drone, droneId);
-    }, 1000);
+    }, 5000);
 
     currentDrone.on('end', function() {
         clearInterval(dronesOnMap[droneId].intervalId);
@@ -192,7 +192,7 @@ function displayDroneOnMap(droneId, startLatLng, endLatLng) {
     dronesOnMap[droneId] = {
         drone: currentDrone,
         color: droneColor,
-        intervalId: intervalId
+        //intervalId: intervalId
     };
     map.addLayer(currentDrone);
 }
