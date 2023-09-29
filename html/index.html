@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drones</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/script/gestionScript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.AnimatedMarker/1.0.0/AnimatedMarker.min.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+</head>
+<body>
+    <h1>Where are the drones ?</h1>
+    <div class="container">
+        <div class="gestion-container">
+            <div class="plus-button">+</div>
+            <div class="drone-form">
+                <div class="edit-title">
+                    <h2 class="drone-title">Drone 1</h2>
+                    <img class="edit-button" src="/images/pen-57.png" alt="pen for editing the drone's name">
+                    <div class="coordinatesDisplay">Latitude: -, Longitude: -</div>
+                </div>
+                <div class="drone-details">
+                    <form>
+                        <label for="adresse"></label>
+                        <input type="text" class="start-adress-input" name="start-adress" placeholder="Adresse de départ">
+                        <div class="start-result-list"></div>
+                        <span class="to-span">to</span>
+                        <input type="text" class="arrival-adress-input" name="arrival-adress" placeholder="Adresse d'arrivée">
+                        <div class="arrival-result-list"></div>
+                        <div class="buttons">
+                            <input class="sendButton button" type="submit" value="Send">
+                            <input class="returnButton button" type="submit" value="Return">
+                            <img class="deleteButton button" src="/images/delete.png" alt="delete icon">
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map">
+    
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>
